@@ -4,16 +4,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Dog extends Animal {
-    private String saing;
+    private final String animalSaying;
 
-
-    public Dog(String saing) {
-        this.saing = saing;
+    public Dog(String saying) {
+        this.animalSaying = saying;
     }
 
     @Override
     void say() {
-        System.out.println(saing);
+        System.out.println(animalSaying);
     }
 
     @Override

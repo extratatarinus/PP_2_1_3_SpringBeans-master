@@ -14,19 +14,16 @@ public class AppConfig {
 
     @Bean(name = "dog")
     public Animal getDog() {
-        Animal animal = new Dog("gav-gav");
-        return animal;
+        return new Dog("gav-gav");
     }
 
     @Bean(name = "cat")
     public Animal getCat() {
-        Animal animal = new Cat("meow-meow");
-        return animal;
+        return new Cat("meow-meow");
     }
 
     @Bean(name = "time")
     public Timer getTimer() {
-        Timer timer = new Timer();
-        return timer;
+        return new Timer();
     }
 }
